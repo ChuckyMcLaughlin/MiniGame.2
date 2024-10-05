@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Movment : MonoBehaviour
-{public float horizontalInput;
+{public GameObject projectilePrefab;
+ public float horizontalInput;
  public float forwardInput;
  public float speed = 10.0f;
  public float xRange = 200;
@@ -34,6 +35,10 @@ public class Movment : MonoBehaviour
         if(transform.position.z>zRange)
         {
              transform.position = new Vector3(transform.position.x,transform.position.y, zRange);
+        }
+        if (Input.GetKeyDown(KeyCode.Space)) 
+        {
+             Instantiate(projectilePrefab, transform.position,projectilePrefab.transform.rotation);
         }
     }
 }

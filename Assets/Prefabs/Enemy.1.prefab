@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 8704050605213386771}
   - component: {fileID: 7495846512338341044}
   - component: {fileID: 2152017741755913987}
-  - component: {fileID: 5586192762277658857}
+  - component: {fileID: 119675955082913914}
+  - component: {fileID: -2947623880433173335}
+  - component: {fileID: -8300556468328050656}
   m_Layer: 0
   m_Name: Enemy.1
   m_TagString: Untagged
@@ -94,7 +96,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5586192762277658857
+--- !u!114 &119675955082913914
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,10 +105,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 6198562739942182946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 517c0289f5fee50428f7699a12bc4e9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c0a34333c64ad24f92aa2661e18db58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 10
+--- !u!114 &-2947623880433173335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6198562739942182946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a9a55b4cae2894f968957b8ece6e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &-8300556468328050656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6198562739942182946}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1496398, y: 14.742584, z: 1.9860773}
+  m_Center: {x: -0.077427864, y: 7.371292, z: -0.30755773}
 --- !u!21 &-2410255529903700220
 Material:
   serializedVersion: 8
@@ -147,7 +182,7 @@ Material:
     - _Cutoff: 0.3
     - _SquashAmount: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
